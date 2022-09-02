@@ -165,29 +165,92 @@ const StyledTabPanel = styled.div`
 `;
 
 const Jobs = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              company
-              location
-              range
-              url
-            }
-            html
-          }
-        }
-      }
-    }
-  `);
+  const data = [
+    {
+      frontmatter: {
+        title: 'Arco Educação',
+        url: 'https://arcoeducacao.com.br/',
+        company: 'Arco Educação',
+        range: 'Jun 2022 - Current',
+      },
+      html: `
+        <li>Worked as project manager with technical skills of a big whitelabel project 
+          with many products (5 whitelabel projects on education segment).</li><br>
+        <li>Worked as a devops focused on AWS (Amazon Web Services) to improve monitoring, performance and 
+        scalability of many applicationns on education segment.</li><br>
+        <li>Worked on union of many databases not solid datas for a unique solid database for 
+          some units of Arco Educação.</li><br>
+        <p>Skills that I most exercise on this company:</p>
+        <br>
+        <ul className="skills-list">
+            <li>Product Manager</li>
+            <li>Tech Lead</li>
+            <li>Devops</li>
+            <li>Node.js</li>
+            <li>React.js</li>
+        </ul>
+        `,
+    },
+    {
+      frontmatter: {
+        title: 'Mb Labs',
+        url: 'https://mblabs.com.br/',
+        company: 'Mb Labs',
+        range: 'Mai 2020 - Mai 2022',
+      },
+      html: `
+        <li>I participate with some technical lead functions, such as: supporting beginner devs, 
+        reviewing pull requests mainly in backend, planning and organizing estimates and deliveries to the client.</li><br>
+        <li>Main developer and tech leader role of the full education application 
+          developed in ReactNative on app, NodeJs on backend ad Angular on dashboard (large application).
+          <a style="color: #64ffda" href="https://apps.apple.com/br/app/pleno-projet/id1500961287" target="_blank">Pleno: Projet</a> / 
+          <a style="color: #64ffda" href="https://apps.apple.com/br/app/pleno-inovadores-em-a%C3%A7%C3%A3o/id1552681193" target="_blank">Pleno: IEA</a>
+        </li><br>
+        <li>Development of the BTG Pactual backend (full LMS developed for BTG Pactual) 
+          developed in NodeJS on backend, React on dashboard.
+          <a style="color: #64ffda" href="https://apps.apple.com/br/app/btg-bankers/id1532769258?l=en" target="_blank">Btg Bankers</a>
+        </li><br>
+        <li>Development of Versa Fuel Backend, a complete application using internal 
+        payment microservice, backend in NodeJS and dashboard in React (startup of innovation in supply) 
+          <a style="color: #64ffda" href="https://versafuel.com.br/" target="_blank">Versa Fuel</a>
+        </li><br>
 
-  const jobsData = data.jobs.edges;
+        <p>Skills that I most exercise on this company:</p>
+        <br>
+        <ul className="skills-list">
+            <li>Tech Lead</li>
+            <li>Node JS</li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Angular</li>
+            <li>Microservice</li>
+            <li>AWS</li>
+        </ul>
+      `
+    },
+    {
+      frontmatter: {
+        title: 'Box IT Tecnologia',
+        url: 'https://boxit.com.br/',
+        company: 'Box IT Tecnologia',
+        range: 'Ago 2019 - Mai 2020',
+      },
+      html: `
+        <li>I participated in the development and maintenance of some CRM (Customer Relationship Management), 
+        ERP (Enterprise Resource Planning) systems developed in VueJS (Javascript) and Laravel (PHP) and 
+        developed some custom institutional websites.
+        </li><br>
+        <ul className="skills-list">
+            <li>PHP</li>
+            <li>Javascript ES6+</li>
+            <li>Vue.js</li>
+            <li>Laravel</li>
+            <li>MySQL</li>
+        </ul>
+      `
+    },
+  ];
+  const jobsData = data;
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -249,8 +312,8 @@ const Jobs = () => {
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+            jobsData.map((o , i) => {
+              const { company } = o.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
@@ -271,8 +334,8 @@ const Jobs = () => {
 
         <StyledTabPanels>
           {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { frontmatter, html } = node;
+            jobsData.map((o, i) => {
+              const { frontmatter, html } = o;
               const { title, url, company, range } = frontmatter;
 
               return (

@@ -352,7 +352,7 @@ const Featured = () => {
       </h2>
 
       <StyledProjectsGrid>
-        {featuredProjects &&
+        {/* {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, cta } = frontmatter;
@@ -408,7 +408,8 @@ const Featured = () => {
                 </div>
               </StyledProject>
             );
-          })}
+          })} */}
+          Under construction...
       </StyledProjectsGrid>
     </section>
   );
