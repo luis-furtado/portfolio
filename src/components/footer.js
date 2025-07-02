@@ -46,7 +46,69 @@ const StyledCredit = styled.div`
   font-size: var(--fz-xxs);
   line-height: 1;
 
-  a {
+  a {Luis Furtado Araujo
+Software Engineer
+(61) 99913-7803 luiscesm1@gmail.com
+linkedin.com/in/luis-furtado-
+github.com/luis-furtado
+I am a software engineer with 7 years of experience across the entire software development lifecycle—from product
+definition and requirement analysis to backend and frontend development, infrastructure, architecture, automated testing,
+and software quality. Currently, I focus on technical leadership and full-stack development, with the goal of driving projects
+to success by balancing scalability, performance, and maintainability.
+RECENT WORK HISTORY
+2022 - 2023
+2022 - 2023
+ARCO EDUCAÇÃO
+Staff Software Engineer
+2023 - Present
+Led a team of five engineers in migrating multiple legacy services to well-architected, scalable microservices.
+Achieved over $80K/year in cost savings through AWS FinOps initiatives optimizing legacy services.
+Designed, developed, and maintained microservices with a strong foundation in software engineering principles and best
+practices.
+Senior Software Engineer
+Technical leadership and development in JavaScript/TypeScript, Node.js, React, AWS, and various frameworks.
+Developing and maintaining 6+ applications across different domains.
+Technologies: Javascript, Typescript, NodeJS, NextJS, React, AWS and SQL.
+MB LABS
+Tech Lead
+Technical leadership, including mentoring junior developers and providing guidance.
+Code reviews, project planning and estimations, organizing timelines and deliveries for clients.
+Lead developer and tech leader for a full-scale education application.
+Software Engineer
+2020 - 2022
+Designing and developing robust web applications with a focus on scalability and performance.
+Full-stack expertise, leveraging front-end and back-end technologies to drive innovation and deliver exceptional user
+experiences.
+Contributed to various applications, including for Versa Fuel, a geolocation startup built with Node.js (backend), React
+(dashboard), and React Native (client-side).
+Technologies: Javascript, Typescript, NodeJS, React Native, React, Angular, SQL, AWS.
+BOX IT
+2018 - 2019
+Full Stack Web Developer
+Developed and maintained CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) systems.
+Tech stack: Vue.js (JavaScript) for the front end and Laravel (PHP) for the back end.
+Built custom institutional websites tailored to specific business needs.
+Technologies: JavaSript · NodeJS · Laravel · VueJS · SQL (MySQL) · Git
+EDUCATION
+University of Brasília – School of Science and Technology in Engineering (UnB FCTE)
+B.S. Software Engineering
+SKILLS
+2018 - 2024
+C
+Problem
+Solving
+JavaScript
+TypeScript
+NodeJS
+React
+Next
+AWS
+Git
+CI/CD
+SQL
+NoSQL
+Software Architecture
+Microservices
     padding: 10px;
   }
 

@@ -59,15 +59,12 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Luís Furtado.</h2>;
-  const three = <h3 className="big-heading">Software Engineer</h3>;
+  const two = <h2 className="big-heading">Luis Furtado Araujo.</h2>;
+  const three = <h3 className="big-heading">Technical Leader & Software Engineering Consultant</h3>;
   const four = (
     <>
       <p>
-      I’m a software engineer with experience in all software developer lifecycle, 
-      on base on product definition, analysis and definition of requirements, backend and frontend development, 
-      infrastructure, automation tests and software quality. Currently, my work experience is on technical 
-      leadership and fulll-stack development.{' '}
+        I am a software engineer with 7 years of experience leading and delivering impactful software solutions across the entire development lifecycle. My focus is on technical leadership, consulting, and full-stack development—driving projects to success by balancing scalability, performance, and maintainability. I help teams and organizations achieve their goals through hands-on leadership, architecture, and a commitment to software quality.<br/>
         <a href="https://www.linkedin.com/in/luis-furtado-/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>

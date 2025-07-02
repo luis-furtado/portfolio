@@ -169,84 +169,42 @@ const Jobs = () => {
     {
       frontmatter: {
         title: 'Arco Educação',
-        url: 'https://arcoeducacao.com.br/',
+        url: 'https://www.linkedin.com/company/arcoeducacao/posts/?feedView=all',
         company: 'Arco Educação',
-        range: 'Jun 2022 - Current',
+        range: '2022 - Present',
       },
       html: `
-        <li>Worked as project manager with technical skills of a big whitelabel project 
-          with many products (5 whitelabel projects on education segment).</li><br>
-        <li>Worked as a devops focused on AWS (Amazon Web Services) to improve monitoring, performance and 
-        scalability of many applicationns on education segment.</li><br>
-        <li>Worked on union of many databases not solid datas for a unique solid database for 
-          some units of Arco Educação.</li><br>
-        <p>Skills that I most exercise on this company:</p>
-        <br>
-        <ul className="skills-list">
-            <li>Product Manager</li>
-            <li>Tech Lead</li>
-            <li>Devops</li>
-            <li>Node.js</li>
-            <li>React.js</li>
-        </ul>
-        `,
+        <liStaff Software Engineer, leading a team of five engineers in migrating multiple legacy services to scalable microservices.</li><br>
+        <li>Achieved over $80K/year in cost savings through AWS FinOps initiatives optimizing legacy services.</li><br>
+        <li>Designed, developed, and maintained microservices with a strong foundation in software engineering principles and best practices.</li><br>
+        <li>Technical leadership and development in JavaScript/TypeScript, Node.js, React, AWS, and various frameworks, maintaining 6+ applications across different domains.</li><br>
+        <p>Technologies: JavaScript, TypeScript, Node.js, Next.js, React, AWS, SQL</p>
+      `,
     },
     {
       frontmatter: {
-        title: 'Mb Labs',
-        url: 'https://mblabs.com.br/',
-        company: 'Mb Labs',
-        range: 'Mai 2020 - Mai 2022',
+        title: 'MB Labs',
+        url: 'https://www.linkedin.com/company/mblabs/posts/?feedView=all',
+        company: 'MB Labs',
+        range: '2020 - 2022',
       },
       html: `
-        <li>I participate with some technical lead functions, such as: supporting beginner devs, 
-        reviewing pull requests mainly in backend, planning and organizing estimates and deliveries to the client.</li><br>
-        <li>Main developer and tech leader role of the full education application 
-          developed in ReactNative on app, NodeJs on backend ad Angular on dashboard (large application).
-          <a style="color: #64ffda" href="https://apps.apple.com/br/app/pleno-projet/id1500961287" target="_blank">Pleno: Projet</a> / 
-          <a style="color: #64ffda" href="https://apps.apple.com/br/app/pleno-inovadores-em-a%C3%A7%C3%A3o/id1552681193" target="_blank">Pleno: IEA</a>
-        </li><br>
-        <li>Development of the BTG Pactual backend (full LMS developed for BTG Pactual) 
-          developed in NodeJS on backend, React on dashboard.
-          <a style="color: #64ffda" href="https://apps.apple.com/br/app/btg-bankers/id1532769258?l=en" target="_blank">Btg Bankers</a>
-        </li><br>
-        <li>Development of Versa Fuel Backend, a complete application using internal 
-        payment microservice, backend in NodeJS and dashboard in React (startup of innovation in supply) 
-          <a style="color: #64ffda" href="https://versafuel.com.br/" target="_blank">Versa Fuel</a>
-        </li><br>
-
-        <p>Skills that I most exercise on this company:</p>
-        <br>
-        <ul className="skills-list">
-            <li>Tech Lead</li>
-            <li>Node JS</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Angular</li>
-            <li>Microservice</li>
-            <li>AWS</li>
-        </ul>
+        <li>Tech Lead, providing technical leadership, mentoring junior developers, code reviews, project planning, and client delivery management.</li><br>
+        <li>Lead developer and tech leader for a full-scale education application (React Native, Node.js, Angular).</li><br>
+        <li>Designed and developed robust web applications with a focus on scalability and performance, including Versa Fuel (Node.js, React, React Native).</li><br>
+        <p>Technologies: JavaScript, TypeScript, Node.js, React Native, React, Angular, SQL, AWS</p>
       `
     },
     {
       frontmatter: {
-        title: 'Box IT Tecnologia',
+        title: 'Box IT',
         url: 'https://boxit.com.br/',
-        company: 'Box IT Tecnologia',
-        range: 'Ago 2019 - Mai 2020',
+        company: 'Box IT',
+        range: '2018 - 2019',
       },
       html: `
-        <li>I participated in the development and maintenance of some CRM (Customer Relationship Management), 
-        ERP (Enterprise Resource Planning) systems developed in VueJS (Javascript) and Laravel (PHP) and 
-        developed some custom institutional websites.
-        </li><br>
-        <ul className="skills-list">
-            <li>PHP</li>
-            <li>Javascript ES6+</li>
-            <li>Vue.js</li>
-            <li>Laravel</li>
-            <li>MySQL</li>
-        </ul>
+        <li>Full Stack Web Developer, developing and maintaining CRM and ERP systems (Vue.js, Laravel) and custom institutional websites.</li><br>
+        <p>Technologies: JavaScript, Node.js, Laravel, Vue.js, SQL (MySQL), Git</p>
       `
     },
   ];
@@ -307,7 +265,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">Where I've Worked</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>

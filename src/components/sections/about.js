@@ -127,15 +127,18 @@ const About = () => {
   }, []);
 
   const skills = [
-    'JavaScript (ES6+)',
+    'Technical Leadership',
+    'Software Architecture',
+    'JavaScript',
     'TypeScript',
     'Node.js',
-    'AWS (Amazon Web Services)',
     'React',
-    'React Rative',
-    'Angular',
     'Next.js',
-    'SQL database (PostgreSQL and MySQL)',
+    'AWS',
+    'SQL & NoSQL',
+    'CI/CD',
+    'Microservices',
+    'Git',
   ];
 
   return (
@@ -146,29 +149,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            My history in programming started when I entered the software engineering course. 
-            In the very first practical programming subject of the course, 
-            I fell completely in love with the purpose, value and challenge it became for me. 
-            Since then, my academic and professional commitment has been to learn the most in 
-            all areas and lifecycles of software engineering. For over 4 years, I have been 
-            actively working in the market developing customized software solutions for customers, 
-            participating in all stages of the software development life cycle, from the analysis 
-            and definition of requirements, planning and definition of processes for the development, 
-            implementation to testing phase. I had contributions in strategic and very important 
-            projects on this journey, from customized LMS applications to fuel delivery applications. 
-            I also spent a large part of that time playing a technical lead role on a project in the education field.
+              I am a software engineer with 7 years of experience across the entire software development lifecycle—from product definition and requirement analysis to backend and frontend development, infrastructure, architecture, automated testing, and software quality. My current focus is on technical leadership and consulting, helping teams and organizations deliver scalable, high-quality solutions. I have led engineering teams, migrated legacy systems to modern microservices, and driven cost savings and performance improvements through cloud and DevOps best practices.
             </p>
 
             <p>
-            These experiences were quite challenging and intense, 
-            but they helped me to continue on the path to becoming a complete software engineer, 
-            with the aim of being able to help and contribute in any area of ​​the software development cycle, 
-            from helping to define the scope of technically based product, planning and organization of agile teams, 
-            definition and organization of requirements, technical definition of architectural patterns as well as practical 
-            help in the development of scalable and maintainable solutions both front-end and back-end.
+              My expertise spans technical leadership, mentoring, project planning, and hands-on development in JavaScript, TypeScript, Node.js, React, AWS, and more. I am passionate about driving projects to success by balancing scalability, performance, and maintainability, and I thrive in environments where I can guide teams, architect solutions, and deliver value through technology.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies and skills I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -180,7 +168,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.JPEG"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
