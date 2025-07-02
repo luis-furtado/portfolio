@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
@@ -193,7 +192,7 @@ const Jobs = () => {
         <li>Lead developer and tech leader for a full-scale education application (React Native, Node.js, Angular).</li><br>
         <li>Designed and developed robust web applications with a focus on scalability and performance, including Versa Fuel (Node.js, React, React Native).</li><br>
         <p>Technologies: JavaScript, TypeScript, Node.js, React Native, React, Angular, SQL, AWS</p>
-      `
+      `,
     },
     {
       frontmatter: {
@@ -205,7 +204,7 @@ const Jobs = () => {
       html: `
         <li>Full Stack Web Developer, developing and maintaining CRM and ERP systems (Vue.js, Laravel) and custom institutional websites.</li><br>
         <p>Technologies: JavaScript, Node.js, Laravel, Vue.js, SQL (MySQL), Git</p>
-      `
+      `,
     },
   ];
   const jobsData = data;
@@ -270,7 +269,7 @@ const Jobs = () => {
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
-            jobsData.map((o , i) => {
+            jobsData.map((o, i) => {
               const { company } = o.frontmatter;
               return (
                 <StyledTabButton
